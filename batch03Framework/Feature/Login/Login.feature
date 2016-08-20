@@ -1,6 +1,5 @@
-Feature: Sample Login
+Feature: Sample practice page
 
-Scenario: Sample login 
-* click on the login button
-* enter username and password
-* click submit
+Scenario: Sample radio selection
+* go to practice page 
+* select "BMW" radio button on layer one
