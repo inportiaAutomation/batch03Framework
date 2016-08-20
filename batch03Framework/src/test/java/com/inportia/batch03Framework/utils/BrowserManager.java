@@ -20,7 +20,20 @@ public class BrowserManager {
 		browser = new FirefoxDriver();
 		browser.manage().deleteAllCookies();
 		browser.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		browser.manage().window().maximize();
 		return browser;
+	}
+	
+	public static void destroyBrowser()
+	{
+			try{
+				browser.close();
+			}
+			catch(Exception ex)
+			{
+				ex.printStackTrace();
+			}
+		
 	}
 	
 	public static WebDriver getBrowser(String browserName)

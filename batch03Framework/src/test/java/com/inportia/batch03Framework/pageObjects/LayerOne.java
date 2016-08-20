@@ -2,6 +2,8 @@ package com.inportia.batch03Framework.pageObjects;
 
 import org.openqa.selenium.By;
 
+import com.inportia.batch03Framework.utils.Hooks;
+
 public class LayerOne extends BasePage {
       
 	
@@ -31,6 +33,11 @@ public class LayerOne extends BasePage {
 		    default:
 				 break;
 		 }
+	  }
+	  
+	  public void close_browser()
+	  {
+		  //Hooks.closeBrowser();
 	  }
 	  
 	  

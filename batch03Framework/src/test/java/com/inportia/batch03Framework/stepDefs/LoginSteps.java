@@ -1,6 +1,7 @@
 package com.inportia.batch03Framework.stepDefs;
 
 import com.inportia.batch03Framework.pageObjects.LayerOne;
+import com.inportia.batch03Framework.utils.BrowserManager;
 
 import cucumber.api.java.en.Given;
 
@@ -21,5 +22,10 @@ public class LoginSteps {
 	   layer_one.select_radio_button(arg1);
 	}
 
+	@Given("^close browser$")
+	public void close_browser() throws Throwable {
+        
+		BrowserManager.destroyBrowser();
+	}
 
 }
