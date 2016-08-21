@@ -46,15 +46,18 @@ public class ClickCheckboxPage extends BasePage {
 	    	{
 	    	case "BMW":
 	    		checkbox = driver.findElement(bmw_chk);
-	    		checkbox.click();
+	    		if(!checkbox.isSelected())
+	    		  checkbox.click();
 	    		break;
 	    	case "HONDA":
 	    		checkbox = driver.findElement(honda_chk);
-	    		checkbox.click();
+	    		if(!checkbox.isSelected())
+		    		  checkbox.click();
 	    		break;
 	    	case "BENZ":
 	    		checkbox = driver.findElement(benz_chk);
-	    		checkbox.click();
+	    		if(!checkbox.isSelected())
+		    		  checkbox.click();
 	    		break;
 	    			
 	    	}

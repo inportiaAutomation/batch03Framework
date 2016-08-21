@@ -16,3 +16,11 @@ Scenario: Click on given checkboxes exclusively
 Scenario: Deselect on all checkbox
 * deselect all the checkboxes
 * close the browser
+
+
+@chk_03
+Scenario: Select only first and third
+* deselect all the checkboxes
+* select "BMW" checkbox
+* select "HONDA" checkbox
+* close the browser
