@@ -1,10 +1,12 @@
-package com.inportia.batch03Framework.utils;
+package com.inportia.batch03Framework.stepDefs;
 
 
 
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
+
+import com.inportia.batch03Framework.utils.BrowserManager;
 
 
 

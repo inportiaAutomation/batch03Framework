@@ -9,7 +9,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions 
 (
 		features = "Feature",
-		glue = "com/inportia/batch03Framework/stepDefs"
+		glue = "com/inportia/batch03Framework/stepDefs",
+		tags = "@chk_01"
 )
 public class App 
 {

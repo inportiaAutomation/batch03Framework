@@ -2,7 +2,7 @@ package com.inportia.batch03Framework.pageObjects;
 
 import org.openqa.selenium.By;
 
-import com.inportia.batch03Framework.utils.Hooks;
+import com.inportia.batch03Framework.stepDefs.Hooks;
 
 public class LayerOne extends BasePage {
       
@@ -30,8 +30,16 @@ public class LayerOne extends BasePage {
 		 {
 		    case "BMW":
 		    	 driver.findElement(radiobox_benz).click();
+		    	 break;
+		    case "BENZ":
+		    	 driver.findElement(radiobox_benz).click();
+		    	 break;
+		    case "HONDA":
+		    	 driver.findElement(radiobox_benz).click();
+		    	 break;
 		    default:
-				 break;
+		         driver.findElement(radiobox_benz).click();
+			 	 break;
 		 }
 	  }
 	  

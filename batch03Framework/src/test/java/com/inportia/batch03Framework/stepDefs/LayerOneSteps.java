@@ -5,7 +5,7 @@ import com.inportia.batch03Framework.utils.BrowserManager;
 
 import cucumber.api.java.en.Given;
 
-public class LoginSteps {
+public class LayerOneSteps {
 
 	
 	LayerOne layer_one = new LayerOne();
@@ -24,7 +24,6 @@ public class LoginSteps {
 
 	@Given("^close browser$")
 	public void close_browser() throws Throwable {
-        
 		BrowserManager.destroyBrowser();
 	}
 
