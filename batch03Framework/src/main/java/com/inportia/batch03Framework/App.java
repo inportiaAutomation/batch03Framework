@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 (
 		features = "Feature",
 		glue = "com/inportia/batch03Framework/stepDefs",
-		tags = "@chk_03"
+		tags = "@window_handle"
 )
 public class App 
 {

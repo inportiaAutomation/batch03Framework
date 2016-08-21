@@ -12,12 +12,13 @@ public class ClickCheckboxPage extends BasePage {
 	
 	public ClickCheckboxPage()
 	{
-		super();
+		
 	}
 	   
 	
 	    public  WebElement get_checkbox(String option)
 	    {
+	    	
 	    	WebElement checkbox = null;
 	    	switch(option)
 	    	{
