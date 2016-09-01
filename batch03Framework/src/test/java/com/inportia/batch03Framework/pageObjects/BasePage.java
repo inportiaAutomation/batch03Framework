@@ -2,7 +2,7 @@ package com.inportia.batch03Framework.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 
-import com.inportia.batch03Framework.stepDefs.Hooks;
+
 import com.inportia.batch03Framework.utils.BrowserManager;
 
 public class BasePage {
@@ -11,7 +11,14 @@ public class BasePage {
 	
 	   public BasePage()
 	   {
-		   driver = BrowserManager.getBrowser("firefox");
+		   try
+		   {
+		     driver = BrowserManager.getBrowser("Firefox");
+		   }
+		   catch(Exception ex)
+		   {
+			   ex.printStackTrace();
+		   }
 	   }
 	   
 	   public void close_browser(){

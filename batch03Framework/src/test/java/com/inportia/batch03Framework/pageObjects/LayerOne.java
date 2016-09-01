@@ -2,7 +2,6 @@ package com.inportia.batch03Framework.pageObjects;
 
 import org.openqa.selenium.By;
 
-import com.inportia.batch03Framework.stepDefs.Hooks;
 
 public class LayerOne extends BasePage {
       

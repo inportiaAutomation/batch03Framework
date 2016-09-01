@@ -16,6 +16,7 @@ public class SwitchWindow extends BasePage {
 	
 	By window_button = By.id("openwindow");
 	String main_window_handle;
+	String second_window_handle;
 	
 	public void click_window_open_button()
 	{
@@ -29,12 +30,27 @@ public class SwitchWindow extends BasePage {
 	{
 	   Set<String> handles = driver.getWindowHandles();
 	   System.out.println(handles);
-       driver.switchTo().window(main_window_handle);
+       for(String handle : handles)
+       {
+    	   second_window_handle = handle;
+    	   driver.switchTo().window(handle);
+    	   System.out.println(handle);
+    	   System.out.println(driver.getCurrentUrl());
+
+       }
+	}
+	
+	public void close_the_second_window()
+	{
+		driver.close();
+		driver.switchTo().window(main_window_handle);
 	}
 	
 	public void verify_if_second_present()
 	{
 		boolean win_bt_present = driver.findElement(window_button).isDisplayed();
 		Assert.assertTrue(win_bt_present);
+		System.out.println(driver.getCurrentUrl());
+		close_the_second_window();
 	}
 }

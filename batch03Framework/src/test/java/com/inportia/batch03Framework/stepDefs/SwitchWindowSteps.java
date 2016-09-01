@@ -23,6 +23,6 @@ public class SwitchWindowSteps{
 
 	@Given("^verify if the content is present in openned window$")
 	public void verify_if_the_content_is_present_in_openned_window() throws Throwable {
-
+        wind.verify_if_second_present();
 	}
 }
